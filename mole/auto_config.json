@@ -1,0 +1,21 @@
+{
+    "tokenizer": {
+        "path": "deepseek-ai/deepseek-coder-1.3b-base"
+    },
+    "datasets": {
+        "path_on_disk": "...",
+        "truncation_length": 2048,
+        "mask_problem_labels": true,
+        "shuffle_seed": 42
+    },
+    "model": {
+        "path": "deepseek-ai/deepseek-coder-1.3b-base",
+        "learning_rate": 2e-4
+    },
+    "training": {
+        "epochs": 2,
+        "per_device_train_batch_size": 16,
+        "per_device_test_batch_size": 32,
+        "gradient_accumulation_steps": 4
+    }
+}

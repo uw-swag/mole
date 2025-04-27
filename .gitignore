@@ -1,0 +1,9 @@
+### Temp Files
+*~
+\#*\#
+.DS_Store
+
+# Local Files
+__pycache__
+mole.egg-info
+build
