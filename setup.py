@@ -4,7 +4,6 @@ setup(
     name="mole",
     version="0.0.1",
     description="Mix-of-Language-Experts Architecture for Multilingual Programming",
-    # packages=find_packages(include=["urf", "urf.*"]),
     author="Yifan Zong",
     author_email="y22zong@uwaterloo.ca",
 )
