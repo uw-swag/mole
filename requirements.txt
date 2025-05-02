@@ -5,12 +5,3 @@ pydantic
 torch
 transformers==4.42.4 # used to develop model
 trl
-seutil
-tree-sitter
-tree-sitter-go
-tree-sitter-java
-tree-sitter-javascript
-tree-sitter-php
-tree-sitter-python
-tree-sitter-ruby
-seaborn

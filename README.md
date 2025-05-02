@@ -20,7 +20,6 @@ This repository contains the code for MoLE.
 - Linux operation system
 - Python 3.9+
 - [CUDA 12.3+](https://developer.nvidia.com/cuda-toolkit)
-- [flash-attn](https://github.com/Dao-AILab/flash-attention)
 
 ### Setup Python environment
 
@@ -29,11 +28,26 @@ The dependencies of MoLE are listed in `requirements.txt`. You can install them 
 pip install -r requirements.txt
 ```
 
+`flash-attn` needs to be installed separately. You can follow the instructions at [Dao-AILab/flash-attn](https://github.com/Dao-AILab/flash-attention).
+
 ### Preparing dataset
 
-### MoLE Finetuning
+Run `python3 ./scripts/filter_glaive_dataset.py` to download and filter the dataset from HuggingFace. The result is stored at `./datasets/filtered_glaive`.
 
-### MoLE Inference
+### Finetuning
+
+Create a diretory `{dir}` to contain the artifacts.
+
+For
+* full baseline, copy `./mole/auto_config.json` into `{dir}`.
+* LoRA baseline, copy `./mole/lora_config.json` into `{dir}`.
+* MoLE, copy `./mole/moe_config.json` into `{dir}`.
+
+Set `{auto|lora|moe}_config.datasets.path_on_disk` to the full path of the processed dataset then start training with `python3 ./mole/train_{auto|lora|moe}.py <dir>`.
+
+### Inference
+
+The tokenizer and finetuned model are saved at `{dir}/final`. Load them using `transformers.AutoTokenizer` and `transformers.AutoModel`.
 
 
 ## Citation

@@ -10,7 +10,7 @@
     },
     "model": {
         "path": "deepseek-ai/deepseek-coder-1.3b-base",
-        "learning_rate": 2e-4
+        "learning_rate": 1e-4
     },
     "training": {
         "epochs": 2,
