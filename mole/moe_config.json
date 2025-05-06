@@ -14,13 +14,13 @@
     },
     "model": {
         "base_path": "deepseek-ai/deepseek-coder-1.3b-base",
-        "expert_rank": 8,
-        "shared_expert_rank": 56,
+        "expert_rank": 16,
+        "shared_expert_rank": 48,
         "expert_alpha": 16,
         "shared_expert_alpha": 32,
         "other_expert_alpha": 32,
         "init_method": "shared_first",
-        "learning_rate": 3e-4
+        "learning_rate": 1e-4
     },
     "training": {
         "epochs": 2,

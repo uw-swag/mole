@@ -12,7 +12,7 @@
         "path": "deepseek-ai/deepseek-coder-1.3b-base",
         "rank": 64,
         "alpha": 32,
-        "learning_rate": 3e-4,
+        "learning_rate": 1e-4,
         "modules_to_save": []
     },
     "training": {
